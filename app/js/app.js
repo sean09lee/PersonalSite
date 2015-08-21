@@ -2,13 +2,13 @@
 
 /* App Module */
 
-var phonecatApp = angular.module('seanApp', [
+var phonecatApp = angular.module('personalSite', [
   'ngRoute',
   'seanControllers',
   'seanServices'
 ]);
 
-seanApp.config(['$routeProvider',
+personalSite.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/phones', {

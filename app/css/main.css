@@ -1,0 +1,24 @@
+/* ============================================================
+  SECTIONS
+============================================================ */
+h1{
+  
+}
+
+h2{
+  
+}
+
+h3{
+  
+}
+
+section.module.parallax-1 {
+  background-image: url("app/img/minneapolis_bg_grey.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("app/img/technology_bg");
+}
+section.module.parallax-3 {
+  background-image: url("../img/img/chess_bg.jpg");
+}
