@@ -25,5 +25,8 @@ This application is Sean's personal site. It will use parallax scrolling and MEA
 - Read the Development section at the end to familiarize yourself with running and developing
   an angular application.
 
+## Sources
+http://callmenick.com/post/advanced-parallax-scrolling-effect
+
 #Contact
 email: sean09lee@gmail.com
