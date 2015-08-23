@@ -123,13 +123,19 @@ nav a {
   transition: all 0.3s;
   text-decoration: none;
 }
-nav a:hover {
-  color: white;
-}
 
-nav ul li a, a:hover, a:active, a:visited {
+nav ul li a:hover, a:active, a:visited {
+    background-color: #fff;
+    transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
     text-decoration: none;
 }
+
+nav ul li a{
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff; 
+}
+
 nav span {
   display: block;
 }
