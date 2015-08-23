@@ -97,54 +97,53 @@ main {
 }
 
 /* ============================================================
-  INFO BAR
+  Navigation Bar
 ============================================================ */
-.info-bar {
+nav {
   padding: 5px 0;
-  background-color: #1e1e1e;
+  background-color: transparent;
   text-align: center;
+  right: 0;
+  position: absolute;
+  font-family: "Roboto Slab", serif;
 }
-.info-bar .icon {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
+nav ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  width: 30px;
-  height: 30px;
-  background: url("../img/icons/icons-light.png");
-  background-image: url("../img/icons/icons-light.svg"), none;
+  text-align: center;
 }
-.info-bar .cmn-tut {
-  background-position: 0 0;
+nav li {
+  display: inline-block;
+  margin: 0 5px;
+  transition: all 0.3s;
 }
-.info-bar .cmn-prev {
-  background-position: -30px 0;
+nav a {
+  display: block;
+  transition: all 0.3s;
+  text-decoration: none;
 }
-.info-bar .cmn-next {
-  background-position: -60px 0;
+nav a:hover {
+  color: #12242d;
 }
-.info-bar .cmn-download {
-  background-position: -90px 0;
+
+nav ul li a, a:hover, a:active, a:visited {
+    text-decoration: none;
 }
-.info-bar .cmn-archive {
-  background-position: -120px 0;
+nav span {
+  display: block;
 }
-.info-bar .icon[data-title]:after {
-  opacity: 1;
-}
-.info-bar .icon[data-title]:hover:after {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 20px;
-  content: attr(data-title);
-  padding: 5px 10px;
-  background-color: #fff;
-  color: #000;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 12px;
-  white-space: nowrap;
+
+@media all and (min-width: 690px) {
+  
+  nav a {
+    padding: 10px 20px;
+    color: #fff;
+  }
+  nav a:hover {
+    color: #fff;
+    background-color: #12242d;
+  }
 }
 
 /* ============================================================
@@ -238,6 +237,7 @@ header .social a:hover {
 ============================================================ */
 footer {
   padding: 20px 0;
+  clear: both;
 }
 footer .asides {
   margin-bottom: 20px;
