@@ -48,6 +48,9 @@ section.module.parallax#intro h1{
 }
 section.module.parallax#intro h2{
   color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
 }
 
 @media all and (min-width: 600px) {
