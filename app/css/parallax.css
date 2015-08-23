@@ -22,7 +22,9 @@ section.module.content {
 }
 section.module.parallax {
   padding: 240px 0;
-  background-position: 0 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 section.module.parallax h1 {
@@ -44,7 +46,7 @@ section.module.parallax-3 {
   background-image: url("../img/backgrounds/technology_bg.jpg");
 }
 section.module.parallax#intro h1{
-  color: white;
+  color: white; 
 }
 section.module.parallax#intro h2{
   color: white;
