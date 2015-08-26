@@ -9,5 +9,4 @@
       el.style.backgroundPosition = elBackgrounPos;
     });
   };
-
 })();

@@ -1,8 +1,10 @@
 /*
-	PersonalSite Ionic Sass Theme
+	PersonalSite Sass Theme
 	Author: Sean Lee
 	Version: 0.0.1
 */
+
+@import "base/base";
 
 /* Base styles, variables, mixins, etc. */
 html, body, div, span, applet, object, iframe,
@@ -24,6 +26,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: "adobe-garamond-pro", Garamond, Georgia, serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -78,7 +81,6 @@ table {
 body {
   background-color: black;
   color: #505050;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -112,7 +114,6 @@ nav {
   text-align: center;
   right: 15px;
   position: absolute;
-  font-family: "Roboto Slab", serif;
 }
 nav ul {
   list-style: none;
