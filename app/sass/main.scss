@@ -3,8 +3,8 @@
 	Author: Sean Lee
 	Version: 0.0.1
 */
+
 /* Base styles, variables, mixins, etc. */
-/* line 20, ../sass/main.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,35 +27,29 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 31, ../sass/main.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 35, ../sass/main.scss */
 body {
   line-height: 1;
 }
 
-/* line 39, ../sass/main.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 43, ../sass/main.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 48, ../sass/main.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 53, ../sass/main.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -64,7 +58,6 @@ table {
 /* ============================================================
   BOX SIZING & CLEARFIX
 ============================================================ */
-/* line 63, ../sass/main.scss */
 *,
 *:before,
 *:after {
@@ -73,7 +66,6 @@ table {
   box-sizing: border-box;
 }
 
-/* line 69, ../sass/main.scss */
 .clearfix:after {
   content: "";
   display: table;
@@ -83,7 +75,6 @@ table {
 /* ============================================================
   HTML & BODY
 ============================================================ */
-/* line 78, ../sass/main.scss */
 body {
   background-color: black;
   color: #505050;
@@ -95,19 +86,16 @@ body {
 /* ============================================================
   PRIMARY STRUCTURE
 ============================================================ */
-/* line 89, ../sass/main.scss */
 .wrapper {
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 94, ../sass/main.scss */
 main {
   display: block;
   background-color: #fff;
 }
 
-/* line 99, ../sass/main.scss */
 .container {
   width: 100%;
   max-width: 960px;
@@ -118,7 +106,6 @@ main {
 /* ============================================================
   Navigation Bar
 ============================================================ */
-/* line 109, ../sass/main.scss */
 nav {
   padding: 5px 0;
   background-color: transparent;
@@ -127,86 +114,69 @@ nav {
   position: absolute;
   font-family: "Roboto Slab", serif;
 }
-
-/* line 117, ../sass/main.scss */
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-
-/* line 123, ../sass/main.scss */
 nav li {
   display: inline-block;
   margin: 0 5px;
   transition: all 0.3s;
 }
-
-/* line 128, ../sass/main.scss */
 nav a {
   display: block;
   transition: all 0.3s;
   text-decoration: none;
 }
 
-/* line 134, ../sass/main.scss */
 nav ul li a:hover, a:active, a:visited {
-  background-color: #fff;
-  transition: background-color 0.3s ease-in, color 0.3s ease-in;
-  text-decoration: none;
+    background-color: #fff;
+    transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+    text-decoration: none;
 }
 
-/* line 141, ../sass/main.scss */
-nav ul li a {
+nav ul li a{
   background-color: rgba(255, 255, 255, 0);
-  color: #fff;
+  color: #fff; 
 }
 
-/* line 146, ../sass/main.scss */
 nav span {
   display: block;
 }
 
 @media all and (min-width: 690px) {
-  /* line 152, ../sass/main.scss */
+  
   nav a {
     padding: 10px 20px;
     color: #fff;
   }
-
-  /* line 156, ../sass/main.scss */
   nav a:hover {
     background-color: rgba(0, 0, 0, 0);
+    
   }
 }
+
 /* ============================================================
   HEADER & SITE TITLE
 ============================================================ */
 /* header */
-/* line 166, ../sass/main.scss */
 header .branding {
   padding: 20px 0;
 }
-
-/* line 169, ../sass/main.scss */
 header .logo {
   margin-bottom: 20px;
   text-align: center;
 }
-
-/* line 173, ../sass/main.scss */
 header .logo img {
   display: inline-block;
   vertical-align: middle;
 }
-
-/* line 177, ../sass/main.scss */
 header .social {
   text-align: center;
 }
-
-/* line 180, ../sass/main.scss */
 header .social a {
   display: inline-block;
   vertical-align: middle;
@@ -221,49 +191,32 @@ header .social a {
   background-image: url("../img/icons/social-light.svg"), none;
   background-size: 180px 30px;
 }
-
-/* line 194, ../sass/main.scss */
 header .social a.fb {
   background-position: 0 0;
 }
-
-/* line 197, ../sass/main.scss */
 header .social a.twitter {
   background-position: -30px 0;
 }
-
-/* line 200, ../sass/main.scss */
 header .social a.googleplus {
   background-position: -60px 0;
 }
-
-/* line 203, ../sass/main.scss */
 header .social a.rss {
   background-position: -90px 0;
 }
-
-/* line 206, ../sass/main.scss */
 header .social a.email {
   background-position: -120px 0;
 }
-
-/* line 209, ../sass/main.scss */
 header .social a.search {
   background-position: -150px 0;
 }
-
-/* line 212, ../sass/main.scss */
 header .social a:hover {
   opacity: 0.4;
 }
 
 @media all and (min-width: 600px) {
-  /* line 217, ../sass/main.scss */
   header .branding {
     padding-left: 60px;
   }
-
-  /* line 220, ../sass/main.scss */
   header .logo {
     margin-bottom: 0;
     margin-left: -60px;
@@ -271,14 +224,10 @@ header .social a:hover {
     width: 60px;
     height: 60px;
   }
-
-  /* line 227, ../sass/main.scss */
   header .logo img {
     display: block;
     margin: 0;
   }
-
-  /* line 231, ../sass/main.scss */
   header .social {
     padding: 15px 0;
     float: right;
@@ -287,14 +236,11 @@ header .social a:hover {
   }
 }
 /* site title */
-/* line 239, ../sass/main.scss */
 .site-title {
   padding: 5px 0;
   background-color: black;
   text-align: center;
 }
-
-/* line 244, ../sass/main.scss */
 .site-title h1 {
   color: #fff;
 }
@@ -302,94 +248,64 @@ header .social a:hover {
 /* ============================================================
   FOOTER
 ============================================================ */
-/* line 251, ../sass/main.scss */
 footer {
   padding: 20px 0;
   clear: both;
 }
-
-/* line 255, ../sass/main.scss */
 footer .asides {
   margin-bottom: 20px;
 }
-
-/* line 258, ../sass/main.scss */
 footer aside {
   margin-bottom: 10px;
 }
-
-/* line 261, ../sass/main.scss */
 footer nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-
-/* line 267, ../sass/main.scss */
 footer nav li {
   display: inline-block;
 }
-
-/* line 270, ../sass/main.scss */
 footer nav a {
   display: block;
   margin: 0 5px;
   color: #fff;
 }
-
-/* line 275, ../sass/main.scss */
 footer .logo {
   text-align: center;
 }
-
-/* line 278, ../sass/main.scss */
 footer .logo img {
   display: inline-block;
   vertical-align: middle;
 }
-
-/* line 282, ../sass/main.scss */
 footer .copyright {
   text-align: center;
 }
-
-/* line 285, ../sass/main.scss */
 footer .copyright small {
   color: #fff;
   font-size: 12px;
 }
-
-/* line 289, ../sass/main.scss */
 footer .copyright a {
   color: #fff;
 }
 
 @media all and (min-width: 600px) {
-  /* line 294, ../sass/main.scss */
   footer aside {
     margin-bottom: 0;
     float: left;
     width: 33.3333%;
   }
-
-  /* line 299, ../sass/main.scss */
   footer nav ul {
     text-align: left;
   }
-
-  /* line 302, ../sass/main.scss */
   footer nav li {
     display: block;
   }
-
-  /* line 305, ../sass/main.scss */
   footer nav a {
     display: inline-block;
     margin: 0;
   }
-
-  /* line 309, ../sass/main.scss */
   footer .logo {
     text-align: right;
   }
@@ -397,13 +313,11 @@ footer .copyright a {
 /* ============================================================
   TEXT LEVEL SEMANTICS
 ============================================================ */
-/* line 316, ../sass/main.scss */
 a {
   text-decoration: none;
   color: #1e1e1e;
 }
 
-/* line 321, ../sass/main.scss */
 a:hover {
   color: black;
 }
