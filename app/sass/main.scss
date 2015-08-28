@@ -8,7 +8,7 @@
 
 /* Base styles, variables, mixins, etc. */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -19,14 +19,33 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, hr {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 16px;
   font: inherit;
   vertical-align: baseline;
+  font-family: "proxima-nova","adobe-garamond-pro", Garamond, Georgia, serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: "adobe-garamond-pro", Garamond, Georgia, serif;
+  text-align: center;
+}
+
+h1{
+  font-size: 34px;
+}
+
+hr{
+  height: 1px;
+  border-style: none;
+  border-width: 0;
+  margin: 32px 32px 32px 32px;
+  color: rgba(26,26,26,.15);
+  background-color: rgba(26,26,26,.15);
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -133,10 +152,10 @@ nav a {
 }
 
 nav ul li a:hover, a:active, a:visited {
-    background-color: #fff;
-    transition: background-color 0.3s ease-in,
-              color 0.3s ease-in;
-    text-decoration: none;
+  background-color: #fff;
+  transition: background-color 0.3s ease-in,
+            color 0.3s ease-in;
+  text-decoration: none;
 }
 
 nav ul li a{
@@ -149,7 +168,6 @@ nav span {
 }
 
 @media all and (min-width: 690px) {
-  
   nav a {
     padding: 10px 20px;
     color: #fff;

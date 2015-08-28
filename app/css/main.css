@@ -3,49 +3,47 @@
 	Author: Sean Lee
 	Version: 0.0.1
 */
-/* line 7, ../sass/base/_base.scss */
+/* ============================================================
+  SECTIONS
+============================================================ */
+/* line 10, ../sass/base/_base.scss */
 section.parallax .container h1 {
   font-family: "Roboto Slab", serif;
 }
-/* line 8, ../sass/base/_base.scss */
+/* line 11, ../sass/base/_base.scss */
 section.parallax .container h2 {
   font-family: "adobe-garamond-pro";
   font-style: italic;
   padding: 10px;
 }
 
-/* ============================================================
-  SECTIONS
-============================================================ */
 /* line 18, ../sass/base/_base.scss */
 section.module:last-child {
   margin-bottom: 0;
 }
 
-/* line 21, ../sass/base/_base.scss */
+/* line 22, ../sass/base/_base.scss */
 section.module h2 {
   margin-bottom: 40px;
   font-size: 30px;
 }
-
-/* line 25, ../sass/base/_base.scss */
+/* line 26, ../sass/base/_base.scss */
 section.module p {
   margin-bottom: 40px;
   font-size: 16px;
   font-weight: 300;
 }
-
-/* line 30, ../sass/base/_base.scss */
+/* line 31, ../sass/base/_base.scss */
 section.module p:last-child {
   margin-bottom: 0;
 }
 
-/* line 33, ../sass/base/_base.scss */
+/* line 35, ../sass/base/_base.scss */
 section.module.content {
   padding: 40px 0;
 }
 
-/* line 36, ../sass/base/_base.scss */
+/* line 38, ../sass/base/_base.scss */
 section.module.parallax {
   padding: 240px 0;
   background-position: 50% 50%;
@@ -53,8 +51,7 @@ section.module.parallax {
   background-attachment: fixed;
   background-size: cover;
 }
-
-/* line 43, ../sass/base/_base.scss */
+/* line 44, ../sass/base/_base.scss */
 section.module.parallax h1 {
   color: white;
   font-size: 48px;
@@ -62,92 +59,132 @@ section.module.parallax h1 {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-}
-
-/* line 51, ../sass/base/_base.scss */
-section.module.parallax-1 {
-  background-image: url("../img/backgrounds/eye_bg.jpg");
+  text-shadow: 0px 0px 10px #fff;
 }
 
 /* line 54, ../sass/base/_base.scss */
-section.module.parallax-2 {
+section.module.parallax-1 {
   background-image: url("../img/backgrounds/technology_bg.jpg");
 }
 
 /* line 57, ../sass/base/_base.scss */
-section.module.parallax-3 {
-  background-image: url("../img/backgrounds/chess_bg.jpg");
+section.module.parallax-2 {
+  background-image: url("../img/backgrounds/technology_bg.jpg");
 }
 
 /* line 60, ../sass/base/_base.scss */
-section.module.parallax#intro h1 {
-  color: white;
-  text-shadow: 0px 0px 5px #fff;
+section.module.parallax-3 {
+  background-image: url(../img/backgrounds/chess_bg.jpg);
 }
 
 /* line 64, ../sass/base/_base.scss */
+section.module.parallax#intro h1 {
+  color: white;
+}
+/* line 67, ../sass/base/_base.scss */
 section.module.parallax#intro h2 {
   color: white;
   text-align: center;
   font-style: italic;
   font-size: 24px;
 }
-
-/* line 70, ../sass/base/_base.scss */
+/* line 73, ../sass/base/_base.scss */
+section.module.parallax#intro .intro_buttons {
+  text-align: center;
+}
+/* line 75, ../sass/base/_base.scss */
 section.module.parallax#intro .intro_buttons a {
   border: 2px solid #fff !important;
   padding: 10px 20px 10px 20px;
   text-align: center;
-  font-family: "Roboto Slab", serif;
   margin: 0 5px;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0);
   color: #fff;
 }
-
-/* line 80, ../sass/base/_base.scss */
-section.module.parallax#intro .intro_buttons a:hover, a:active {
+/* line 84, ../sass/base/_base.scss */
+section.module.parallax#intro .intro_buttons a:hover, section.module.parallax#intro .intro_buttons a:active {
   background-color: #fff;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
   text-decoration: none;
 }
 
-/* line 87, ../sass/base/_base.scss */
-section.module.parallax#intro .intro_buttons {
-  text-align: center;
-}
-
 @media all and (min-width: 600px) {
-  /* line 94, ../sass/base/_base.scss */
+  /* line 95, ../sass/base/_base.scss */
+  section.module h1 {
+    font-size: 34px;
+  }
+  /* line 98, ../sass/base/_base.scss */
   section.module h2 {
-    font-size: 42px;
+    font-size: 26px;
   }
-
-  /* line 97, ../sass/base/_base.scss */
+  /* line 101, ../sass/base/_base.scss */
   section.module p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
-  /* line 100, ../sass/base/_base.scss */
+  /* line 105, ../sass/base/_base.scss */
   section.module.parallax {
     padding: 300px 0;
   }
-
-  /* line 103, ../sass/base/_base.scss */
+  /* line 107, ../sass/base/_base.scss */
   section.module.parallax h1 {
     font-size: 96px;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 108, ../sass/base/_base.scss */
+  /* line 113, ../sass/base/_base.scss */
   section.module.parallax h1 {
     font-size: 100px;
   }
 }
+/* ============================================================
+  Flexbox
+============================================================ */
+/* line 122, ../sass/base/_base.scss */
+.flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+/* line 127, ../sass/base/_base.scss */
+.flex-top {
+  flex: 1 100%;
+}
+
+/* line 131, ../sass/base/_base.scss */
+.flex-inner.first {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  order: 1;
+}
+
+/* line 136, ../sass/base/_base.scss */
+.flex-inner.second {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  order: 2;
+}
+
 /* Base styles, variables, mixins, etc. */
 /* line 22, ../sass/main.scss */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -158,46 +195,68 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, hr {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 16px;
   font: inherit;
   vertical-align: baseline;
+  font-family: "proxima-nova","adobe-garamond-pro", Garamond, Georgia, serif;
+  text-align: center;
+}
+
+/* line 33, ../sass/main.scss */
+h1, h2, h3, h4, h5, h6 {
   font-family: "adobe-garamond-pro", Garamond, Georgia, serif;
+  text-align: center;
+}
+
+/* line 38, ../sass/main.scss */
+h1 {
+  font-size: 34px;
+}
+
+/* line 42, ../sass/main.scss */
+hr {
+  height: 1px;
+  border-style: none;
+  border-width: 0;
+  margin: 32px 32px 32px 32px;
+  color: rgba(26, 26, 26, 0.15);
+  background-color: rgba(26, 26, 26, 0.15);
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 34, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 38, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 body {
   line-height: 1;
 }
 
-/* line 42, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 46, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 51, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 56, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -206,7 +265,7 @@ table {
 /* ============================================================
   BOX SIZING & CLEARFIX
 ============================================================ */
-/* line 66, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 *,
 *:before,
 *:after {
@@ -215,7 +274,7 @@ table {
   box-sizing: border-box;
 }
 
-/* line 72, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .clearfix:after {
   content: "";
   display: table;
@@ -225,7 +284,7 @@ table {
 /* ============================================================
   HTML & BODY
 ============================================================ */
-/* line 81, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 body {
   background-color: black;
   color: #505050;
@@ -236,19 +295,19 @@ body {
 /* ============================================================
   PRIMARY STRUCTURE
 ============================================================ */
-/* line 91, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 .wrapper {
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 96, ../sass/main.scss */
+/* line 115, ../sass/main.scss */
 main {
   display: block;
   background-color: #fff;
 }
 
-/* line 101, ../sass/main.scss */
+/* line 120, ../sass/main.scss */
 .container {
   width: 100%;
   max-width: 960px;
@@ -259,7 +318,7 @@ main {
 /* ============================================================
   Navigation Bar
 ============================================================ */
-/* line 111, ../sass/main.scss */
+/* line 130, ../sass/main.scss */
 nav {
   padding: 5px 0;
   background-color: transparent;
@@ -268,7 +327,7 @@ nav {
   position: absolute;
 }
 
-/* line 118, ../sass/main.scss */
+/* line 137, ../sass/main.scss */
 nav ul {
   list-style: none;
   margin: 0;
@@ -276,46 +335,46 @@ nav ul {
   text-align: center;
 }
 
-/* line 124, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 nav li {
   display: inline-block;
   margin: 0 5px;
   transition: all 0.3s;
 }
 
-/* line 129, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
 nav a {
   display: block;
   transition: all 0.3s;
   text-decoration: none;
 }
 
-/* line 135, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 nav ul li a:hover, a:active, a:visited {
   background-color: #fff;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
   text-decoration: none;
 }
 
-/* line 142, ../sass/main.scss */
+/* line 161, ../sass/main.scss */
 nav ul li a {
   background-color: rgba(255, 255, 255, 0);
   color: #fff;
 }
 
-/* line 147, ../sass/main.scss */
+/* line 166, ../sass/main.scss */
 nav span {
   display: block;
 }
 
 @media all and (min-width: 690px) {
-  /* line 153, ../sass/main.scss */
+  /* line 171, ../sass/main.scss */
   nav a {
     padding: 10px 20px;
     color: #fff;
   }
 
-  /* line 157, ../sass/main.scss */
+  /* line 175, ../sass/main.scss */
   nav a:hover {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -324,29 +383,29 @@ nav span {
   HEADER & SITE TITLE
 ============================================================ */
 /* header */
-/* line 167, ../sass/main.scss */
+/* line 185, ../sass/main.scss */
 header .branding {
   padding: 20px 0;
 }
 
-/* line 170, ../sass/main.scss */
+/* line 188, ../sass/main.scss */
 header .logo {
   margin-bottom: 20px;
   text-align: center;
 }
 
-/* line 174, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
 header .logo img {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 178, ../sass/main.scss */
+/* line 196, ../sass/main.scss */
 header .social {
   text-align: center;
 }
 
-/* line 181, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
 header .social a {
   display: inline-block;
   vertical-align: middle;
@@ -362,48 +421,48 @@ header .social a {
   background-size: 180px 30px;
 }
 
-/* line 195, ../sass/main.scss */
+/* line 213, ../sass/main.scss */
 header .social a.fb {
   background-position: 0 0;
 }
 
-/* line 198, ../sass/main.scss */
+/* line 216, ../sass/main.scss */
 header .social a.twitter {
   background-position: -30px 0;
 }
 
-/* line 201, ../sass/main.scss */
+/* line 219, ../sass/main.scss */
 header .social a.googleplus {
   background-position: -60px 0;
 }
 
-/* line 204, ../sass/main.scss */
+/* line 222, ../sass/main.scss */
 header .social a.rss {
   background-position: -90px 0;
 }
 
-/* line 207, ../sass/main.scss */
+/* line 225, ../sass/main.scss */
 header .social a.email {
   background-position: -120px 0;
 }
 
-/* line 210, ../sass/main.scss */
+/* line 228, ../sass/main.scss */
 header .social a.search {
   background-position: -150px 0;
 }
 
-/* line 213, ../sass/main.scss */
+/* line 231, ../sass/main.scss */
 header .social a:hover {
   opacity: 0.4;
 }
 
 @media all and (min-width: 600px) {
-  /* line 218, ../sass/main.scss */
+  /* line 236, ../sass/main.scss */
   header .branding {
     padding-left: 60px;
   }
 
-  /* line 221, ../sass/main.scss */
+  /* line 239, ../sass/main.scss */
   header .logo {
     margin-bottom: 0;
     margin-left: -60px;
@@ -412,13 +471,13 @@ header .social a:hover {
     height: 60px;
   }
 
-  /* line 228, ../sass/main.scss */
+  /* line 246, ../sass/main.scss */
   header .logo img {
     display: block;
     margin: 0;
   }
 
-  /* line 232, ../sass/main.scss */
+  /* line 250, ../sass/main.scss */
   header .social {
     padding: 15px 0;
     float: right;
@@ -427,14 +486,14 @@ header .social a:hover {
   }
 }
 /* site title */
-/* line 240, ../sass/main.scss */
+/* line 258, ../sass/main.scss */
 .site-title {
   padding: 5px 0;
   background-color: black;
   text-align: center;
 }
 
-/* line 245, ../sass/main.scss */
+/* line 263, ../sass/main.scss */
 .site-title h1 {
   color: #fff;
 }
@@ -442,23 +501,23 @@ header .social a:hover {
 /* ============================================================
   FOOTER
 ============================================================ */
-/* line 252, ../sass/main.scss */
+/* line 270, ../sass/main.scss */
 footer {
   padding: 20px 0;
   clear: both;
 }
 
-/* line 256, ../sass/main.scss */
+/* line 274, ../sass/main.scss */
 footer .asides {
   margin-bottom: 20px;
 }
 
-/* line 259, ../sass/main.scss */
+/* line 277, ../sass/main.scss */
 footer aside {
   margin-bottom: 10px;
 }
 
-/* line 262, ../sass/main.scss */
+/* line 280, ../sass/main.scss */
 footer nav ul {
   list-style: none;
   margin: 0;
@@ -466,70 +525,70 @@ footer nav ul {
   text-align: center;
 }
 
-/* line 268, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 footer nav li {
   display: inline-block;
 }
 
-/* line 271, ../sass/main.scss */
+/* line 289, ../sass/main.scss */
 footer nav a {
   display: block;
   margin: 0 5px;
   color: #fff;
 }
 
-/* line 276, ../sass/main.scss */
+/* line 294, ../sass/main.scss */
 footer .logo {
   text-align: center;
 }
 
-/* line 279, ../sass/main.scss */
+/* line 297, ../sass/main.scss */
 footer .logo img {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 283, ../sass/main.scss */
+/* line 301, ../sass/main.scss */
 footer .copyright {
   text-align: center;
 }
 
-/* line 286, ../sass/main.scss */
+/* line 304, ../sass/main.scss */
 footer .copyright small {
   color: #fff;
   font-size: 12px;
 }
 
-/* line 290, ../sass/main.scss */
+/* line 308, ../sass/main.scss */
 footer .copyright a {
   color: #fff;
 }
 
 @media all and (min-width: 600px) {
-  /* line 295, ../sass/main.scss */
+  /* line 313, ../sass/main.scss */
   footer aside {
     margin-bottom: 0;
     float: left;
     width: 33.3333%;
   }
 
-  /* line 300, ../sass/main.scss */
+  /* line 318, ../sass/main.scss */
   footer nav ul {
     text-align: left;
   }
 
-  /* line 303, ../sass/main.scss */
+  /* line 321, ../sass/main.scss */
   footer nav li {
     display: block;
   }
 
-  /* line 306, ../sass/main.scss */
+  /* line 324, ../sass/main.scss */
   footer nav a {
     display: inline-block;
     margin: 0;
   }
 
-  /* line 310, ../sass/main.scss */
+  /* line 328, ../sass/main.scss */
   footer .logo {
     text-align: right;
   }
@@ -537,13 +596,13 @@ footer .copyright a {
 /* ============================================================
   TEXT LEVEL SEMANTICS
 ============================================================ */
-/* line 317, ../sass/main.scss */
+/* line 335, ../sass/main.scss */
 a {
   text-decoration: none;
   color: #1e1e1e;
 }
 
-/* line 322, ../sass/main.scss */
+/* line 340, ../sass/main.scss */
 a:hover {
   color: black;
 }
