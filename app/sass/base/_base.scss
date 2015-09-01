@@ -73,19 +73,23 @@ section.module.parallax#intro{
   .intro_buttons{
     text-align: center;
     a{
-      border: 2px solid #fff !important;      
+      border: 2px solid #fff;      
       padding: 10px 20px 10px 20px;
       text-align: center;
       margin: 0 5px;
-      text-decoration: none;
-      background-color: rgba(255, 255, 255, 0);
+      background-color: transparent;
       color: #fff;
+      text-transform: uppercase;
+      span{
+        display: inline-block;
+      }
     }
-    a:hover, a:active{
+    
+    a:hover{
       background-color: #fff;
-        transition: background-color 0.3s ease-in,
-                  color 0.3s ease-in;
-      text-decoration: none;      
+      transition: background-color 0.3s ease-in, color 0.3s ease-in;
+      text-decoration: none;
+      color: #181818;
     }
   }
 }
@@ -136,4 +140,53 @@ section.module.parallax#intro{
 .flex-inner.second{
   @include flex(1);
   order: 2;
+}
+
+/* ============================================================
+  Navigation Bar
+============================================================ */
+nav {
+  padding: 5px 0;
+  background-color: transparent;
+  text-align: center;
+  right: 15px;
+  position: absolute;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 5px;
+      transition: all 0.3s;
+    }
+    a{
+      background-color: rgba(255, 255, 255, 0);
+      color: #fff;
+      display: block;
+      transition: all 0.3s;
+      text-decoration: none; 
+    }
+    a:hover {
+      background-color: #fff;
+      transition: background-color 0.3s ease-in,
+                color 0.3s ease-in;
+      text-decoration: none;
+    }
+  }
+   span {
+    display: block;
+  } 
+}
+
+@media all and (min-width: 690px) {
+  nav a {
+    padding: 10px 20px;
+    color: #fff;
+  }
+  nav a:hover {
+    background-color: rgba(0, 0, 0, 0);
+    
+  }
 }

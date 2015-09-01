@@ -123,61 +123,6 @@ main {
   margin: 0 auto;
   padding: 0 20px;
 }
-
-/* ============================================================
-  Navigation Bar
-============================================================ */
-nav {
-  padding: 5px 0;
-  background-color: transparent;
-  text-align: center;
-  right: 15px;
-  position: absolute;
-}
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-nav li {
-  display: inline-block;
-  margin: 0 5px;
-  transition: all 0.3s;
-}
-nav a {
-  display: block;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-
-nav ul li a:hover, a:active, a:visited {
-  background-color: #fff;
-  transition: background-color 0.3s ease-in,
-            color 0.3s ease-in;
-  text-decoration: none;
-}
-
-nav ul li a{
-  background-color: rgba(255, 255, 255, 0);
-  color: #fff; 
-}
-
-nav span {
-  display: block;
-}
-
-@media all and (min-width: 690px) {
-  nav a {
-    padding: 10px 20px;
-    color: #fff;
-  }
-  nav a:hover {
-    background-color: rgba(0, 0, 0, 0);
-    
-  }
-}
-
 /* ============================================================
   HEADER & SITE TITLE
 ============================================================ */
