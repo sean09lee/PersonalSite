@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="../css/main.css">
-  <link rel='shortcut icon' type='image/x-icon' href='../img/favicon/favicon.ico' />
+  <link rel='shortcut icon' type='image/x-icon' href='../img/icons/favicon/favicon.ico' />
 
   <!-- js -->
   <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -31,8 +31,8 @@
   <script src="../js/controllers.js"></script>
   <script src="../js/services.js"></script>
 </head>
-<body> 
-    <div class="wrapper">
+<body ng-controller="mainController"> 
+    <div id="main" class="wrapper">
         <header>   
             <nav>
                 <ul>
@@ -45,12 +45,16 @@
         </header>
         
         <main>
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+            <div ng-view></div>
+            
             <section id="intro" class="module parallax parallax-1">
                 <div class="container">
                     <h1>Sean D Lee</h1>
                     <h2>Techie, foodie, and aspiring full-stack developer</h2>
                     <div class="intro_buttons">
-                        <a class="resume" href=""><span>Resume</span></a>
+                        <a class="resume" href="../docs/resume.docx"><span>Resume</span></a>
                         <a class="contact" href=""><span>Contact</span></a>
                     </div>
                 </div>
