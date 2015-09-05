@@ -106,39 +106,43 @@ section.module.parallax#intro .intro_buttons a {
 section.module.parallax#intro .intro_buttons a span {
   display: inline-block;
 }
-/* line 88, ../sass/base/_base.scss */
+/* line 87, ../sass/base/_base.scss */
 section.module.parallax#intro .intro_buttons a:hover {
   background-color: #fff;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
   text-decoration: none;
   color: #181818;
 }
+/* line 93, ../sass/base/_base.scss */
+section.module.parallax#intro .intro_buttons a:active {
+  color: darkblue;
+}
 
 @media all and (min-width: 600px) {
-  /* line 99, ../sass/base/_base.scss */
+  /* line 101, ../sass/base/_base.scss */
   section.module h1 {
     font-size: 34px;
   }
-  /* line 102, ../sass/base/_base.scss */
+  /* line 104, ../sass/base/_base.scss */
   section.module h2 {
     font-size: 26px;
   }
-  /* line 105, ../sass/base/_base.scss */
+  /* line 107, ../sass/base/_base.scss */
   section.module p {
     font-size: 16px;
   }
 
-  /* line 109, ../sass/base/_base.scss */
+  /* line 111, ../sass/base/_base.scss */
   section.module.parallax {
     padding: 300px 0;
   }
-  /* line 111, ../sass/base/_base.scss */
+  /* line 113, ../sass/base/_base.scss */
   section.module.parallax h1 {
     font-size: 96px;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 117, ../sass/base/_base.scss */
+  /* line 119, ../sass/base/_base.scss */
   section.module.parallax h1 {
     font-size: 100px;
   }
@@ -146,7 +150,7 @@ section.module.parallax#intro .intro_buttons a:hover {
 /* ============================================================
   Flexbox
 ============================================================ */
-/* line 126, ../sass/base/_base.scss */
+/* line 128, ../sass/base/_base.scss */
 .flex-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -159,12 +163,12 @@ section.module.parallax#intro .intro_buttons a:hover {
   flex-flow: row wrap;
 }
 
-/* line 131, ../sass/base/_base.scss */
+/* line 133, ../sass/base/_base.scss */
 .flex-top {
   flex: 1 100%;
 }
 
-/* line 135, ../sass/base/_base.scss */
+/* line 137, ../sass/base/_base.scss */
 .flex-inner.first {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -173,9 +177,10 @@ section.module.parallax#intro .intro_buttons a:hover {
   -ms-flex: 1;
   flex: 1;
   order: 1;
+  padding-right: 10px;
 }
 
-/* line 140, ../sass/base/_base.scss */
+/* line 143, ../sass/base/_base.scss */
 .flex-inner.second {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -184,33 +189,33 @@ section.module.parallax#intro .intro_buttons a:hover {
   -ms-flex: 1;
   flex: 1;
   order: 2;
+  padding-left: 10px;
 }
 
 /* ============================================================
   Navigation Bar
 ============================================================ */
-/* line 148, ../sass/base/_base.scss */
+/* line 152, ../sass/base/_base.scss */
 nav {
   padding: 5px 0;
   background-color: transparent;
   text-align: center;
-  right: 15px;
   position: absolute;
 }
-/* line 154, ../sass/base/_base.scss */
+/* line 157, ../sass/base/_base.scss */
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 159, ../sass/base/_base.scss */
+/* line 162, ../sass/base/_base.scss */
 nav ul li {
   display: inline-block;
   margin: 0 5px;
   transition: all 0.3s;
 }
-/* line 164, ../sass/base/_base.scss */
+/* line 167, ../sass/base/_base.scss */
 nav ul a {
   background-color: rgba(255, 255, 255, 0);
   color: #fff;
@@ -218,29 +223,89 @@ nav ul a {
   transition: all 0.3s;
   text-decoration: none;
 }
-/* line 171, ../sass/base/_base.scss */
+/* line 174, ../sass/base/_base.scss */
 nav ul a:hover {
   background-color: #fff;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
   text-decoration: none;
 }
-/* line 178, ../sass/base/_base.scss */
-nav span {
-  display: block;
+/* line 180, ../sass/base/_base.scss */
+nav ul a:active {
+  color: darkblue;
+}
+
+/* line 186, ../sass/base/_base.scss */
+header nav {
+  right: 15px;
 }
 
 @media all and (min-width: 690px) {
-  /* line 184, ../sass/base/_base.scss */
+  /* line 192, ../sass/base/_base.scss */
   nav a {
     padding: 10px 20px;
     color: #fff;
   }
-
-  /* line 188, ../sass/base/_base.scss */
+  /* line 196, ../sass/base/_base.scss */
   nav a:hover {
     background-color: rgba(0, 0, 0, 0);
   }
 }
+/* ============================================================
+  FOOTER
+============================================================ */
+/* line 205, ../sass/base/_base.scss */
+footer {
+  padding: 20px 0;
+  clear: both;
+}
+/* line 208, ../sass/base/_base.scss */
+footer a {
+  display: block;
+  margin: 0 5px;
+  color: #fff;
+}
+/* line 213, ../sass/base/_base.scss */
+footer .asides {
+  margin-bottom: 20px;
+}
+/* line 216, ../sass/base/_base.scss */
+footer aside {
+  margin-bottom: 10px;
+}
+/* line 220, ../sass/base/_base.scss */
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 225, ../sass/base/_base.scss */
+footer nav ul li {
+  display: inline-block;
+}
+/* line 230, ../sass/base/_base.scss */
+footer .logo {
+  text-align: center;
+}
+/* line 232, ../sass/base/_base.scss */
+footer .logo img {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 237, ../sass/base/_base.scss */
+footer .copyright {
+  text-align: center;
+}
+/* line 239, ../sass/base/_base.scss */
+footer .copyright small {
+  color: #fff;
+  font-size: 12px;
+}
+/* line 243, ../sass/base/_base.scss */
+footer .copyright a {
+  color: #fff;
+}
+
 /* Base styles, variables, mixins, etc. */
 /* line 22, ../sass/main.scss */
 html, body, div, span, applet, object, iframe,
@@ -495,110 +560,15 @@ header .social a:hover {
 }
 
 /* ============================================================
-  FOOTER
-============================================================ */
-/* line 215, ../sass/main.scss */
-footer {
-  padding: 20px 0;
-  clear: both;
-}
-
-/* line 219, ../sass/main.scss */
-footer .asides {
-  margin-bottom: 20px;
-}
-
-/* line 222, ../sass/main.scss */
-footer aside {
-  margin-bottom: 10px;
-}
-
-/* line 225, ../sass/main.scss */
-footer nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-/* line 231, ../sass/main.scss */
-footer nav li {
-  display: inline-block;
-}
-
-/* line 234, ../sass/main.scss */
-footer nav a {
-  display: block;
-  margin: 0 5px;
-  color: #fff;
-}
-
-/* line 239, ../sass/main.scss */
-footer .logo {
-  text-align: center;
-}
-
-/* line 242, ../sass/main.scss */
-footer .logo img {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* line 246, ../sass/main.scss */
-footer .copyright {
-  text-align: center;
-}
-
-/* line 249, ../sass/main.scss */
-footer .copyright small {
-  color: #fff;
-  font-size: 12px;
-}
-
-/* line 253, ../sass/main.scss */
-footer .copyright a {
-  color: #fff;
-}
-
-@media all and (min-width: 600px) {
-  /* line 258, ../sass/main.scss */
-  footer aside {
-    margin-bottom: 0;
-    float: left;
-    width: 33.3333%;
-  }
-
-  /* line 263, ../sass/main.scss */
-  footer nav ul {
-    text-align: left;
-  }
-
-  /* line 266, ../sass/main.scss */
-  footer nav li {
-    display: block;
-  }
-
-  /* line 269, ../sass/main.scss */
-  footer nav a {
-    display: inline-block;
-    margin: 0;
-  }
-
-  /* line 273, ../sass/main.scss */
-  footer .logo {
-    text-align: right;
-  }
-}
-/* ============================================================
   TEXT LEVEL SEMANTICS
 ============================================================ */
-/* line 280, ../sass/main.scss */
+/* line 215, ../sass/main.scss */
 a {
   text-decoration: none;
   color: #1e1e1e;
 }
 
-/* line 285, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 a:hover {
   color: black;
 }

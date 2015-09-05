@@ -1,22 +1,23 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en" ng-app="personalApp">
 <head>
   <!-- title and meta -->
   <meta charset="utf-8">
   <meta content="width=device-width,initial-scale=1.0" name="viewport">
   <meta name="author" content="Sean Lee">
   <meta name="keywords" content="HTML,CSS,JavaScript,.NET,C#,Oracle,SQL,Devloper">
-  <meta name="description" content="All about techie, foodie, and future full-stack developer: Sean D Lee.">
-  <link rel="manifest" href="/manifest.json">
+  <meta name="description" content="All about techie, foodie, and aspiring full-stack developer: Sean Lee.">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/manifest.json">
   <title>Sean Lee</title>
  
   <!-- css -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="../css/main.css">
+  <link rel='shortcut icon' type='image/x-icon' href='../img/favicon/favicon.ico' />
 
   <!-- js -->
   <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -24,17 +25,24 @@
   <script src="../bower_components/angular-animate/angular-animate.js"></script>
   <script src="../bower_components/angular-route/angular-route.js"></script>
   <script src="../bower_components/angular-resource/angular-resource.js"></script>
+  
+  
+  <script src="../js/app.js"></script>
+  <script src="../js/controllers.js"></script>
+  <script src="../js/services.js"></script>
 </head>
 <body> 
-    <div class="wrapper">   
-        <nav>
-            <ul>
-                <li><a href="#" class="searchbychar" href data-target="intro"><span>Home</span></a></li>
-                <li><a href="#" class="searchbychar" href data-target="experience"><span>Experience</span></a></li>
-                <li><a href="#" class="searchbychar" href data-target="about"><span>About</span></a></li>
-                <li><a href="#" class="searchbychar" href data-target="contact"><span>Contact</span></a></li>
-            </ul>
-        </nav>
+    <div class="wrapper">
+        <header>   
+            <nav>
+                <ul>
+                    <li><a href="#" class="searchbychar" href data-target="intro"><span>Home</span></a></li>
+                    <li><a href="#" class="searchbychar" href data-target="experience"><span>Experience</span></a></li>
+                    <li><a href="#" class="searchbychar" href data-target="about"><span>About</span></a></li>
+                    <li><a href="#" class="searchbychar" href data-target="contact"><span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </header>
         
         <main>
             <section id="intro" class="module parallax parallax-1">
@@ -65,10 +73,11 @@
             <hr>
             
             <section id="experience" class="module content">
-                <div class="container flex-container">
-                    <header class="flex-top">
+                <div class="container">
+                    <header class="">
                         <h2>Work experience</h2>
                     </header>
+                    <div class="flex-container">
                     <article class="flex-inner first">
                         <h2>General Mills</h2>
                         <img src="" />
@@ -80,6 +89,7 @@
                         <img src="" />
                         <p>On the side, I work as a senior developer for the fast-growing startup SparkStarter.</p>
                     </article>
+                    </div>
                 </div>
             </section>
         
@@ -91,12 +101,12 @@
         
             <section class="module content">
                 <div class="container">
-                <h2>Tech/Gaming</h2>
-                <p>I'm a nerd at heart and spend much of my free time checking out the latest gadgets in both real world applications and virtual ones</p>
-                <h2>Traveling</h2>
-                <p>My second passion is traveling. I recently traveled to England and Paris and can't wait to see more of the world! Check out my blog here to see more!</p>
-                <h2>Food</h2>
-                <p>Last but not least, I love food! Check out my favorites here!</p>
+                    <h2>Tech/Gaming</h2>
+                    <p>I'm a nerd at heart and spend much of my free time checking out the latest gadgets in both real world applications and virtual ones</p>
+                    <h2>Traveling</h2>
+                    <p>My second passion is traveling. I recently traveled to England and Paris and can't wait to see more of the world! Check out my blog here to see more!</p>
+                    <h2>Food</h2>
+                    <p>Last but not least, I love food! Check out my favorites here!</p>
                 </div>
             </section>
         </main>
@@ -107,14 +117,14 @@
                 <aside>
                 <nav>
                     <ul>
-                    <li><a href="http://www.seandlee.com/about">About</a></li>
-                    <li><a href="http://www.seandlee.com/projects">Projects</a></li>
-                    <li><a href="http://www.seandlee.com/contact">Contact</a></li>
+                        <li><a href="http://www.seandlee.com/about">About</a></li>
+                        <li><a href="http://www.seandlee.com/projects">Projects</a></li>
+                        <li><a href="http://www.seandlee.com/contact">Contact</a></li>
                     </ul>
                 </nav>
                 </aside>
                 <aside class="logo">
-                <a href="http://www.seandlee.com/"><img alt="" onerror="this.src=logo.png" src="../img/icons/logo_glow.png"></a>
+                    <a href="http://www.seandlee.com/"><img alt="" onerror="this.src=favicon.ico" src="../img/icons/favicon/favicon.ico"></a>
                 </aside>
             </div>
             <div class="copyright">

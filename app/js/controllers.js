@@ -2,15 +2,15 @@
 
 /* Controllers */
 
-var seanControllers = angular.module('phonecatControllers', []);
+var personalControllers = angular.module('personalControllers', []);
 
-seanControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
+personalControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
   function($scope, Phone) {
     $scope.phones = Phone.query();
     $scope.orderProp = 'age';
   }]);
 
-seanControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
+personalControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
   function($scope, $routeParams, Phone) {
     $scope.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
       $scope.mainImageUrl = phone.images[0];

@@ -84,12 +84,14 @@ section.module.parallax#intro{
         display: inline-block;
       }
     }
-    
     a:hover{
       background-color: #fff;
       transition: background-color 0.3s ease-in, color 0.3s ease-in;
       text-decoration: none;
       color: #181818;
+    }
+    a:active {
+      color: darkblue;
     }
   }
 }
@@ -135,11 +137,13 @@ section.module.parallax#intro{
 .flex-inner.first{
   @include flex(1);
   order: 1;
+  padding-right: 10px;
 }
 
 .flex-inner.second{
   @include flex(1);
   order: 2;
+  padding-left: 10px;
 }
 
 /* ============================================================
@@ -149,7 +153,6 @@ nav {
   padding: 5px 0;
   background-color: transparent;
   text-align: center;
-  right: 15px;
   position: absolute;
   ul {
     list-style: none;
@@ -174,19 +177,71 @@ nav {
                 color 0.3s ease-in;
       text-decoration: none;
     }
-  }
-   span {
-    display: block;
+    a:active {
+      color: darkblue;
+    }
   } 
 }
 
+header nav{
+  right: 15px;
+}
+
 @media all and (min-width: 690px) {
-  nav a {
-    padding: 10px 20px;
-    color: #fff;
+  nav {
+    a {
+      padding: 10px 20px;
+      color: #fff;
+    }
+    a:hover {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  } 
+}
+
+/* ============================================================
+  FOOTER
+============================================================ */
+footer{
+  padding: 20px 0;
+  clear: both;
+  a{
+    display: block;
+    margin: 0 5px;
+    color: #fff;  
   }
-  nav a:hover {
-    background-color: rgba(0, 0, 0, 0);
-    
+  .asides{
+    margin-bottom: 20px;
+  }
+  aside{
+    margin-bottom: 10px;
+  }
+  nav{
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      li{
+        display: inline-block;
+      }
+    }  
+  } 
+  .logo {
+    text-align: center;
+    img {
+      display: inline-block;
+      vertical-align: middle;  
+    }
+  }
+  .copyright {
+    text-align: center;
+    small {
+      color: #fff;
+      font-size: 12px;
+    }
+    a {
+      color: #fff;
+    }
   }
 }

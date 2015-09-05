@@ -2,13 +2,13 @@
 
 /* App Module */
 
-var phonecatApp = angular.module('personalSite', [
+var personalApp = angular.module('personalApp', [
   'ngRoute',
-  'seanControllers',
-  'seanServices'
+  'personalControllers',
+  'personalServices'
 ]);
 
-personalSite.config(['$routeProvider',
+personalApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/phones', {
