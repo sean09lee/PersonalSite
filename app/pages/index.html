@@ -39,23 +39,24 @@
                     <li><a href="#" class="searchbychar" href data-target="intro"><span>Home</span></a></li>
                     <li><a href="#" class="searchbychar" href data-target="experience"><span>Experience</span></a></li>
                     <li><a href="#" class="searchbychar" href data-target="about"><span>About</span></a></li>
-                    <li><a href="#" class="searchbychar" href data-target="contact"><span>Contact</span></a></li>
+                    <li><a href="mailto:sean09lee@gmail.com"><span>Contact</span></a></li>
                 </ul>
             </nav>
         </header>
         
         <main>
-            <!-- angular templating -->
-            <!-- this is where content will be injected -->
-            <div ng-view></div>
-            
             <section id="intro" class="module parallax parallax-1">
                 <div class="container">
-                    <h1>Sean D Lee</h1>
-                    <h2>Techie, foodie, and aspiring full-stack developer</h2>
-                    <div class="intro_buttons">
-                        <a class="resume" href="../docs/resume.docx"><span>Resume</span></a>
-                        <a class="contact" href=""><span>Contact</span></a>
+                    <div class="left-col">
+                        <img ng-src="../img/sean_avatar.jpeg" class="avatar"/>
+                    </div>
+                    <div class="right-col">
+                        <h1>Sean Lee</h1>
+                        <h2>Techie, foodie, and aspiring full-stack developer</h2>
+                        <div class="intro_buttons">
+                            <a class="resume" href="../docs/resume.docx"><span>Resume</span></a>
+                            <a href="mailto:sean09lee@gmail.com"><span>Contact</span></a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -67,13 +68,6 @@
                 </div>
             </section>
         
-        <!--
-            <section id="experience" class="module parallax parallax-2">
-                <div class="container">
-                <h1>Experience</h1>
-                </div>
-            </section>
-        -->
             <hr>
             
             <section id="experience" class="module content">
@@ -83,15 +77,13 @@
                     </header>
                     <div class="flex-container">
                     <article class="flex-inner first">
-                        <h2>General Mills</h2>
-                        <img src="" />
+                        <h2><img ng-src="../img/icons/gmi_logo.jpg" class="wlogo"/>General Mills</h2>
                         <p>I currently work as a full-time applications developer at General Mills maintaining and enhancing their major websites such as <a href="www.boxtops4education.com">boxtops4education.com</a>
                         and <a href="www.tablespoon.com">tablespoon.com</a></p>
                     </article>
                     <article class="flex-inner second">    
-                        <h2>SparkStarter</h2>
-                        <img src="" />
-                        <p>On the side, I work as a senior developer for the fast-growing startup SparkStarter.</p>
+                        <h2><img ng-src="../img/icons/sparkstarter/icon-small.png" class="wlogo"/>SparkStarter</h2>
+                        <p>On the side, I work as a senior developer for the fast-growing matchmaking startup <a href="www.sparkstarter.com">SparkStarter</a>.</p>
                     </article>
                     </div>
                 </div>
@@ -106,7 +98,7 @@
             <section class="module content">
                 <div class="container">
                     <h2>Tech/Gaming</h2>
-                    <p>I'm a nerd at heart and spend much of my free time checking out the latest gadgets in both real world applications and virtual ones</p>
+                    <p>I'm a nerd at heart and spend much of my free time checking out the latest gadgets in both real world applications and virtual ones.</p>
                     <h2>Traveling</h2>
                     <p>My second passion is traveling. I recently traveled to England and Paris and can't wait to see more of the world! Check out my blog here to see more!</p>
                     <h2>Food</h2>
@@ -121,9 +113,9 @@
                 <aside>
                 <nav>
                     <ul>
-                        <li><a href="http://www.seandlee.com/about">About</a></li>
-                        <li><a href="http://www.seandlee.com/projects">Projects</a></li>
-                        <li><a href="http://www.seandlee.com/contact">Contact</a></li>
+                        <li><a class="searchbychar" href data-target="about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="mailto:sean09lee@gmail.com">Contact</a></li>
                     </ul>
                 </nav>
                 </aside>
@@ -137,7 +129,7 @@
                 </small>
             </div>
             </div>
-        </footer><!-- /footer -->
+        </footer>
     </div>
     <!-- js -->
     <!--<script src="../js/parallax.js"></script>-->
