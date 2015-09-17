@@ -1,10 +1,27 @@
 var express = require('express');
 var app = express();
+var http = require('http').Server(app);
+var bodyParser = require('body-parser');
+var port = process.env.PORT || 1337;
 
-app.get('/', function(req, res){
-  res.send('hello world');
+//configure some server information: views and caching
+app.set('pages', __dirname + '/pages');
+app.use(bodyParser.urlencoded({
+	extended: true
+}));
+app.use(bodyParser.json());
+app.use(express.static(__dirname + '/client/_resources', { maxAge: 2592000000 }));
+
+//get the appropriate angular pages file when it is requested
+app.get('/pages/:path', function(req, res){
+	res.render('pages/' + req.params.path);
 });
 
-app.use(express.static(__dirname + '/pages/index.html'));
+//route all other requests to the index page
+app.get('*', function(req, res){
+	res.render('index');
+});
 
-app.listen(process.env.PORT || 8000);
+http.listen(port, function () {
+    console.log('Listening on port ' + port);
+});
