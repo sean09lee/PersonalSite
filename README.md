@@ -7,6 +7,7 @@ This application is Sean's personal site. It will use parallax scrolling and MEA
 - Install Cyberduck to SFTP files
 - Install Node.js
 - Install NPM, Bower, and Ionic
+- Install forever-monitor
 - Understand AngularJS
 - Understand front-end HTML/CSS development
 
@@ -34,11 +35,11 @@ This application is Sean's personal site. It will use parallax scrolling and MEA
 - Get [Node.js][node-download].
 - Install the tool dependencies (`npm install`).
 - Spin up the localhost (`npm start`)
-
+- Or you can spin up localhost using forever (`forever start app/app.js`)
 
 ## Workings of the application
 - The application filesystem layout structure is based on the [angular-seed] project.
-- There is no dynamic backend (no application server) for this application yet.
+- There is no dynamic backend (no application server) for this application yet...more to come!
 
 ## Sources
 http://callmenick.com/post/advanced-parallax-scrolling-effect
