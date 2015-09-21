@@ -20,6 +20,7 @@ This application is Sean's personal site. It will use parallax scrolling and MEA
 
 ## Sources
 http://callmenick.com/post/advanced-parallax-scrolling-effect
+https://github.com/blueimp/Bootstrap-Image-Gallery/blob/master/README.md
 
 #Contact
 email: sean09lee@gmail.com

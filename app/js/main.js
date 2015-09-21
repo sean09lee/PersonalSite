@@ -14,21 +14,27 @@ personalApp.controller('mainController', function($scope) {
 personalApp.config(function($routeProvider) {
     $routeProvider
 
-        // route for the home page
+        // route for the home view
         .when('/', {
             templateUrl : 'home.html',
             controller  : 'mainController'
         })
 
-        // route for the about page
+        // route for the about view
         .when('/about', {
-            templateUrl : 'pages/about.html',
+            templateUrl : 'views/about.html',
             controller  : 'aboutController'
         })
 
-        // route for the contact page
-        .when('/contact', {
-            templateUrl : 'pages/contact.html',
-            controller  : 'contactController'
+        // route for the general mills view
+        .when('/generalmills', {
+            templateUrl : 'views/generalmills.html',
+            controller  : 'mainController'
+        })
+        
+        // route for the general mills view
+        .when('/sparkstarter', {
+            templateUrl : 'views/sparkstarter.html',
+            controller  : 'mainController'
         });
 });

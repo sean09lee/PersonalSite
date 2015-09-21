@@ -17,3 +17,11 @@ personalControllers.controller('aboutController', function($scope) {
 personalControllers.controller('contactController', function($scope) {
     $scope.message = 'Contact us! JK. This is just a demo.';
 });
+
+personalControllers.controller('generalmillsController', function($scope) {
+    $scope.message = 'Contact us! JK. This is just a demo.';
+});
+
+personalControllers.controller('sparkstarterController', function($scope) {
+    $scope.message = 'Contact us! JK. This is just a demo.';
+});

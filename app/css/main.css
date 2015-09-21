@@ -71,21 +71,20 @@ section.module.parallax-1 {
 }
 
 /* line 57, ../sass/base/_base.scss */
-section.module.parallax-2 {
-  background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url("../img/backgrounds/technology_bg.jpg");
-}
-
-/* line 60, ../sass/base/_base.scss */
 section.module.parallax-3 {
   background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url(../img/backgrounds/chess_bg.jpg);
 }
 
-/* line 64, ../sass/base/_base.scss */
+section.module.parallax-gmi {
+  background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url(../img/backgrounds/gmi_bg.jpg);
+}
+
+/* line 61, ../sass/base/_base.scss */
 section.module.parallax#intro .left-col {
   float: left;
   width: 10%;
 }
-/* line 67, ../sass/base/_base.scss */
+/* line 64, ../sass/base/_base.scss */
 section.module.parallax#intro .left-col .avatar {
   border-radius: 100%;
   position: absolute;
@@ -94,32 +93,32 @@ section.module.parallax#intro .left-col .avatar {
   border-style: inset;
   border-width: thin;
 }
-/* line 75, ../sass/base/_base.scss */
+/* line 72, ../sass/base/_base.scss */
 section.module.parallax#intro .left-col .avatar:hover {
   box-shadow: 0 0 20px white;
 }
-/* line 79, ../sass/base/_base.scss */
+/* line 76, ../sass/base/_base.scss */
 section.module.parallax#intro .right-col {
   float: right;
   width: 90%;
 }
-/* line 82, ../sass/base/_base.scss */
+/* line 79, ../sass/base/_base.scss */
 section.module.parallax#intro .right-col h1 {
   color: white;
   z-index: 2;
 }
-/* line 86, ../sass/base/_base.scss */
+/* line 83, ../sass/base/_base.scss */
 section.module.parallax#intro .right-col h2 {
   color: white;
   text-align: center;
   font-style: italic;
   font-size: 24px;
 }
-/* line 92, ../sass/base/_base.scss */
+/* line 89, ../sass/base/_base.scss */
 section.module.parallax#intro .right-col .intro_buttons {
   text-align: center;
 }
-/* line 94, ../sass/base/_base.scss */
+/* line 91, ../sass/base/_base.scss */
 section.module.parallax#intro .right-col .intro_buttons a {
   border: 2px solid #fff;
   padding: 10px 20px 10px 20px;
@@ -129,20 +128,24 @@ section.module.parallax#intro .right-col .intro_buttons a {
   color: #fff;
   text-transform: uppercase;
 }
-/* line 102, ../sass/base/_base.scss */
+/* line 99, ../sass/base/_base.scss */
 section.module.parallax#intro .right-col .intro_buttons a span {
   display: inline-block;
 }
-/* line 106, ../sass/base/_base.scss */
+/* line 103, ../sass/base/_base.scss */
 section.module.parallax#intro .right-col .intro_buttons a:hover {
   background-color: #fff;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
   text-decoration: none;
   color: #181818;
 }
-/* line 112, ../sass/base/_base.scss */
+/* line 109, ../sass/base/_base.scss */
 section.module.parallax#intro .right-col .intro_buttons a:active {
   color: darkblue;
+}
+/* line 112, ../sass/base/_base.scss */
+section.module.parallax#intro .right-col .intro_buttons a:visited {
+  color: darkgrey;
 }
 
 @media all and (min-width: 600px) {
@@ -279,49 +282,54 @@ footer {
   clear: both;
 }
 /* line 220, ../sass/base/_base.scss */
-footer a {
-  display: block;
-  margin: 0 5px;
-  color: #fff;
+footer nav {
+  width: 100%;
+  position: relative;
 }
-/* line 225, ../sass/base/_base.scss */
-footer .asides {
-  margin-bottom: 20px;
-}
-/* line 228, ../sass/base/_base.scss */
-footer aside {
-  margin-bottom: 10px;
-}
-/* line 232, ../sass/base/_base.scss */
+/* line 223, ../sass/base/_base.scss */
 footer nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 237, ../sass/base/_base.scss */
+/* line 228, ../sass/base/_base.scss */
 footer nav ul li {
   display: inline-block;
 }
-/* line 242, ../sass/base/_base.scss */
+/* line 230, ../sass/base/_base.scss */
+footer nav ul li a {
+  display: block;
+  margin: 0 5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 235, ../sass/base/_base.scss */
+footer nav ul li a:hover {
+  background-color: transparent;
+  transition: none;
+  color: white;
+}
+/* line 243, ../sass/base/_base.scss */
 footer .logo {
   text-align: center;
+  padding: 10px;
 }
-/* line 244, ../sass/base/_base.scss */
+/* line 246, ../sass/base/_base.scss */
 footer .logo img {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 249, ../sass/base/_base.scss */
+/* line 251, ../sass/base/_base.scss */
 footer .copyright {
   text-align: center;
+  padding: 10px;
 }
-/* line 251, ../sass/base/_base.scss */
+/* line 254, ../sass/base/_base.scss */
 footer .copyright small {
   color: #fff;
   font-size: 12px;
 }
-/* line 255, ../sass/base/_base.scss */
+/* line 258, ../sass/base/_base.scss */
 footer .copyright a {
   color: #fff;
 }
