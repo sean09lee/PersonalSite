@@ -19,6 +19,10 @@
 				transition: all .3s ease-out;
 				transform: translate(0px, 5px);
 			}
+			.block-subtitle{
+				transition: all .3s ease-out;
+				transform: translate(0px, -10px);
+			}
 		}
 		.block-content{
 			letter-spacing: 1px;
@@ -52,6 +56,12 @@
 					text-decoration: none;
 					color: #181818;
 				}
+			}
+			.block-subtitle{
+				color: #fff;
+				font-family: "adobe-garamond-pro";
+				font-style: italic;
+				padding-top: 10px;
 			}
 		}
 	}

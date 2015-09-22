@@ -55,7 +55,7 @@ section.module.parallax {
 section.module.parallax-1 {
   background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url("../img/backgrounds/desk_bg.jpg");
 }
-section.module.parallax-3 {
+section.module.parallax-2 {
   background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url(../img/backgrounds/chess_bg.jpg);
 }
 section.module.parallax-gmi {
@@ -73,11 +73,17 @@ section.module.parallax#intro{
       position: absolute;
       top: 40%;
       transform: translateY(-50%);
-      border-style: inset;
+      border-style: dotted;
       border-width: thin;
+      border-color: #fff;
     }
     .avatar:hover{
       box-shadow: 0 0 20px white;
+    }
+    a, a:hover, a:focus, a:visited{
+      text-decoration: none;
+      color: transparent;
+      border: none;
     }
   }
   .right-col{
@@ -177,6 +183,7 @@ section.module.parallax#intro{
   FOOTER
 ============================================================ */
 footer{
+  color: #353439;
   padding: 20px 0;
   clear: both;
   nav{
