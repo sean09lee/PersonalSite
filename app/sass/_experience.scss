@@ -1,6 +1,6 @@
 .content-block{
 	width: 320px;
-	height: 320px;
+	height: 200px;
 	background-size: cover;
 	vertical-align: middle;
 	&.gmi{
@@ -9,24 +9,50 @@
 	&.sparkstarter{
 		background-image: linear-gradient(to bottom, rgba(26, 26, 26, 0.6) 0%, rgba(48, 48, 48, 0.5) 100%), url(../img/backgrounds/dating_bg.jpg);	
 	}
-	.block-title{
-		font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-		font-size: 24px;
-		font-weight: 700;
-		letter-spacing: 1px;
-		margin-bottom: 10px;
-		text-transform: uppercase;
-		color: #fff;
-		transition: all .3s ease-out;
-	}	
-	.block-button{
-		border: 2px solid #fff;
-		padding: 10px 20px 10px 20px;
-		text-align: center;
-		margin: 0 5px;
-		background-color: transparent;
-		color: #fff;
-		text-transform: uppercase;
-		transition: all .3s ease-out;
+	.overlay{
+		height: 100%;
+		width: 100%;
+		&:hover{
+			transition: all .3s ease-in;
+			background-color: rgba(26, 26, 26, 0.6);
+			.block-title{
+				transition: all .3s ease-out;
+				transform: translate(0px, 5px);
+			}
+		}
+		.block-content{
+			letter-spacing: 1px;
+			padding-top: 40px;
+			text-align: center;
+			vertical-align: middle;
+			.block-title{
+				font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+				font-size: 22px;
+				font-weight: 700;
+				letter-spacing: 1px;
+				margin-bottom: 10px;
+				text-transform: uppercase;
+				color: #fff;
+			}
+			.block-button{
+				border: 2px solid #fff;
+				text-align: center;
+				margin: 0 5px;
+				background-color: transparent;
+				color: #fff;
+				font-size: 12px;
+				font-weight: 400;
+				letter-spacing: 2px;
+				line-height: 4em;
+				padding: 1em 1.75em;
+				text-transform: uppercase;
+				&:hover{
+					background-color: #fff;
+					transition: background-color 0.3s ease-in, color 0.3s ease-in;
+					text-decoration: none;
+					color: #181818;
+				}
+			}
+		}
 	}
 }

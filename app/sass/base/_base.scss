@@ -2,6 +2,7 @@
 @import "normalize";
 @import "variables";
 @import "animations";
+@import "nav";
 
 /* ============================================================
   SECTIONS
@@ -112,11 +113,8 @@ section.module.parallax#intro{
         text-decoration: none;
         color: #181818;
       }
-      a:active {
-        color: darkblue;
-      }
-      a:visited {
-        color: darkgrey;
+      a:visited, a:focus {
+        text-decoration: none;
       }
     }
   }
@@ -156,6 +154,8 @@ section.module.parallax#intro{
   @include flex-flow(row wrap);
   .flex-inner{
     @include flex(1);
+    @include flexbox;
+    @include justify-content(center);
     &.first{
       order: 1;  
     }
@@ -171,44 +171,7 @@ section.module.parallax#intro{
   margin-right: 10px;
 }
 
-/* ============================================================
-  Navigation Bar
-============================================================ */
-nav {
-  padding: 5px 0;
-  background-color: transparent;
-  text-align: center;
-  position: absolute;
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    li {
-      display: inline-block;
-      margin: 0 5px;
-      transition: all 0.3s;
-    }
-    a{
-      background-color: rgba(255, 255, 255, 0);
-      color: #fff;
-      display: block;
-      transition: all 0.3s;
-      text-decoration: none; 
-      padding: 10px 20px
-    }
-    a:hover {
-      background-color: #fff;
-      transition: background-color 0.3s ease-in,
-                color 0.3s ease-in;
-      text-decoration: none;
-    }
-  } 
-}
 
-header nav{
-  right: 15px;
-}
 
 /* ============================================================
   FOOTER
