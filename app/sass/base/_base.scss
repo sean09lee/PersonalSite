@@ -2,7 +2,8 @@
 @import "normalize";
 @import "variables";
 @import "animations";
-@import "nav";
+@import "header";
+@import "footer";
 
 /* ============================================================
   SECTIONS
@@ -175,57 +176,4 @@ section.module.parallax#intro{
   height: 20px;
   width: 20px;
   margin-right: 10px;
-}
-
-
-
-/* ============================================================
-  FOOTER
-============================================================ */
-footer{
-  color: #353439;
-  padding: 20px 0;
-  clear: both;
-  nav{
-    width: 100%;
-    position: relative;
-    ul{
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      li{
-        display: inline-block;
-        a{
-          display: block;
-          margin: 0 5px;
-          color: rgba(255,255,255,.7);  
-        }
-        a:hover{
-          background-color: transparent;
-          transition: none;
-          color: rgba(255,255,255,1.0);
-        }
-      }
-    }  
-  } 
-  .logo {
-    text-align: center;
-    padding: 10px;
-    img {
-      display: inline-block;
-      vertical-align: middle;  
-    }
-  }
-  .copyright {
-    text-align: center;
-    padding: 10px;
-    small {
-      color: #fff;
-      font-size: 12px;
-    }
-    a {
-      color: #fff;
-    }
-  }
 }
