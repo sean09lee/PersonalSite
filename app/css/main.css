@@ -19,7 +19,7 @@ nav {
 }
 /* line 10, ../sass/base/_header.scss */
 nav.navbar-fixed {
-  background-color: rgba(28, 28, 28, 0.9);
+  background-color: rgba(28, 28, 28, 0.6);
   position: fixed;
   z-index: 2000;
 }
@@ -126,34 +126,32 @@ footer nav ul li a:hover {
   background-color: transparent;
   transition: none;
   color: white;
+  text-shadow: 0 0 20px white;
 }
-/* line 31, ../sass/base/_footer.scss */
+/* line 32, ../sass/base/_footer.scss */
 footer .logo {
   text-align: center;
   padding: 10px;
-  width: 40px;
-  height: 40px;
 }
-/* line 36, ../sass/base/_footer.scss */
-footer .logo img {
-  display: inline-block;
-  vertical-align: middle;
+/* line 35, ../sass/base/_footer.scss */
+footer .logo a {
+  text-decoration: none;
 }
-/* line 40, ../sass/base/_footer.scss */
-footer .logo svg {
-  fill: #fff;
+/* line 38, ../sass/base/_footer.scss */
+footer .logo a:hover {
+  text-shadow: 0 0 20px white;
 }
-/* line 44, ../sass/base/_footer.scss */
+/* line 42, ../sass/base/_footer.scss */
 footer .copyright {
   text-align: center;
   padding: 10px;
 }
-/* line 47, ../sass/base/_footer.scss */
+/* line 45, ../sass/base/_footer.scss */
 footer .copyright small {
   color: #fff;
   font-size: 12px;
 }
-/* line 51, ../sass/base/_footer.scss */
+/* line 49, ../sass/base/_footer.scss */
 footer .copyright a {
   color: #fff;
 }
@@ -432,9 +430,9 @@ section.module.parallax#intro .right-col .intro_buttons a:visited, section.modul
 }
 /* line 32, ../sass/_experience.scss */
 .content-block .overlay .block-content .block-title {
-  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "proxima-nova";
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1px;
   margin-bottom: 10px;
   text-transform: uppercase;
