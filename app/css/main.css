@@ -170,33 +170,30 @@ section.parallax .container h2 {
   padding: 10px;
 }
 
-/* line 20, ../sass/base/_base.scss */
-section.module:last-child {
-  margin-bottom: 0;
-}
-
-/* line 24, ../sass/base/_base.scss */
+/* line 21, ../sass/base/_base.scss */
 section.module h2 {
   margin-bottom: 40px;
   font-size: 30px;
 }
-/* line 28, ../sass/base/_base.scss */
+/* line 25, ../sass/base/_base.scss */
 section.module p {
   margin-bottom: 40px;
   font-size: 16px;
   font-weight: 300;
 }
-/* line 33, ../sass/base/_base.scss */
+/* line 29, ../sass/base/_base.scss */
 section.module p:last-child {
   margin-bottom: 0;
 }
-
-/* line 37, ../sass/base/_base.scss */
+/* line 34, ../sass/base/_base.scss */
 section.module.content {
   padding: 40px 0;
 }
-
-/* line 40, ../sass/base/_base.scss */
+/* line 38, ../sass/base/_base.scss */
+section.module:last-child {
+  margin-bottom: 0;
+}
+/* line 42, ../sass/base/_base.scss */
 section.module.parallax {
   padding: 150px 0;
   background-position: 50% 50%;
@@ -204,7 +201,7 @@ section.module.parallax {
   background-attachment: fixed;
   background-size: cover;
 }
-/* line 46, ../sass/base/_base.scss */
+/* line 48, ../sass/base/_base.scss */
 section.module.parallax h1 {
   color: white;
   font-size: 48px;
@@ -214,75 +211,74 @@ section.module.parallax h1 {
   text-transform: uppercase;
   text-shadow: 0px 0px 10px #fff;
 }
-
-/* line 56, ../sass/base/_base.scss */
-section.module.parallax-1 {
-  background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url("../img/backgrounds/desk_bg.jpg");
-}
-
 /* line 59, ../sass/base/_base.scss */
+section.module.parallax-1 {
+  background-image: -webkit-linear-gradient(rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url("../img/backgrounds/desk_bg.jpg");
+  background-image: -o-linear-gradient(rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url("../img/backgrounds/desk_bg.jpg");
+  background-image: linear-gradient(rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url("../img/backgrounds/desk_bg.jpg");
+}
+/* line 65, ../sass/base/_base.scss */
 section.module.parallax-2 {
   background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url(../img/backgrounds/chess_bg.jpg);
 }
-
-/* line 62, ../sass/base/_base.scss */
-section.module.parallax-gmi {
+/* line 69, ../sass/base/_base.scss */
+section.module.parllax-gmi {
   background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url(../img/backgrounds/gmi_bg.jpg);
 }
-
-/* line 65, ../sass/base/_base.scss */
+/* line 73, ../sass/base/_base.scss */
 section.module.parallax-sparkstarter {
   background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.7) 0%, rgba(48, 48, 48, 0.5) 100%), url(../img/backgrounds/dating_bg.jpg);
 }
-
-/* line 69, ../sass/base/_base.scss */
-section.module.parallax#intro .left-col {
-  float: left;
-  width: 10%;
+/* line 78, ../sass/base/_base.scss */
+section.module.parallax#intro .container {
+  display: flex;
 }
-/* line 72, ../sass/base/_base.scss */
-section.module.parallax#intro .left-col .avatar {
+/* line 81, ../sass/base/_base.scss */
+section.module.parallax#intro .container .left-col {
+  justify-content: center;
+  display: flex;
+  flex-grow: 1;
+  align-self: center;
+}
+/* line 87, ../sass/base/_base.scss */
+section.module.parallax#intro .container .left-col .avatar {
   border-radius: 100%;
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
   border-style: dotted;
   border-width: thin;
   border-color: #fff;
 }
-/* line 81, ../sass/base/_base.scss */
-section.module.parallax#intro .left-col .avatar:hover {
+/* line 94, ../sass/base/_base.scss */
+section.module.parallax#intro .container .left-col .avatar:hover {
   box-shadow: 0 0 20px white;
 }
-/* line 84, ../sass/base/_base.scss */
-section.module.parallax#intro .left-col a, section.module.parallax#intro .left-col a:hover, section.module.parallax#intro .left-col a:focus, section.module.parallax#intro .left-col a:visited {
+/* line 98, ../sass/base/_base.scss */
+section.module.parallax#intro .container .left-col a, section.module.parallax#intro .container .left-col a:hover, section.module.parallax#intro .container .left-col a:focus, section.module.parallax#intro .container .left-col a:visited {
   text-decoration: none;
   color: transparent;
   border: none;
 }
-/* line 90, ../sass/base/_base.scss */
-section.module.parallax#intro .right-col {
-  float: right;
-  width: 90%;
+/* line 105, ../sass/base/_base.scss */
+section.module.parallax#intro .container .right-col {
+  flex-grow: 1;
 }
-/* line 93, ../sass/base/_base.scss */
-section.module.parallax#intro .right-col h1 {
+/* line 108, ../sass/base/_base.scss */
+section.module.parallax#intro .container .right-col h1 {
   color: white;
   z-index: 2;
 }
-/* line 97, ../sass/base/_base.scss */
-section.module.parallax#intro .right-col h2 {
+/* line 112, ../sass/base/_base.scss */
+section.module.parallax#intro .container .right-col h2 {
   color: white;
   text-align: center;
   font-style: italic;
   font-size: 24px;
 }
-/* line 103, ../sass/base/_base.scss */
-section.module.parallax#intro .right-col .intro_buttons {
+/* line 118, ../sass/base/_base.scss */
+section.module.parallax#intro .container .right-col .intro_buttons {
   text-align: center;
 }
-/* line 105, ../sass/base/_base.scss */
-section.module.parallax#intro .right-col .intro_buttons a {
+/* line 120, ../sass/base/_base.scss */
+section.module.parallax#intro .container .right-col .intro_buttons a {
   border: 2px solid #fff;
   padding: 10px 20px 10px 20px;
   text-align: center;
@@ -291,47 +287,47 @@ section.module.parallax#intro .right-col .intro_buttons a {
   color: #fff;
   text-transform: uppercase;
 }
-/* line 113, ../sass/base/_base.scss */
-section.module.parallax#intro .right-col .intro_buttons a span {
+/* line 129, ../sass/base/_base.scss */
+section.module.parallax#intro .container .right-col .intro_buttons a span {
   display: inline-block;
 }
-/* line 117, ../sass/base/_base.scss */
-section.module.parallax#intro .right-col .intro_buttons a:hover {
+/* line 133, ../sass/base/_base.scss */
+section.module.parallax#intro .container .right-col .intro_buttons a:hover {
   background-color: #fff;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
   text-decoration: none;
   color: #181818;
 }
-/* line 123, ../sass/base/_base.scss */
-section.module.parallax#intro .right-col .intro_buttons a:visited, section.module.parallax#intro .right-col .intro_buttons a:focus {
+/* line 139, ../sass/base/_base.scss */
+section.module.parallax#intro .container .right-col .intro_buttons a:visited, section.module.parallax#intro .container .right-col .intro_buttons a:focus {
   text-decoration: none;
 }
 
 @media all and (min-width: 600px) {
-  /* line 132, ../sass/base/_base.scss */
+  /* line 154, ../sass/base/_base.scss */
   section.module h1 {
     font-size: 34px;
   }
-  /* line 135, ../sass/base/_base.scss */
+  /* line 157, ../sass/base/_base.scss */
   section.module h2 {
     font-size: 26px;
   }
-  /* line 138, ../sass/base/_base.scss */
+  /* line 160, ../sass/base/_base.scss */
   section.module p {
     font-size: 16px;
   }
 
-  /* line 142, ../sass/base/_base.scss */
+  /* line 164, ../sass/base/_base.scss */
   section.module.parallax {
     padding: 150px 0;
   }
-  /* line 144, ../sass/base/_base.scss */
+  /* line 166, ../sass/base/_base.scss */
   section.module.parallax h1 {
     font-size: 96px;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 150, ../sass/base/_base.scss */
+  /* line 174, ../sass/base/_base.scss */
   section.module.parallax h1 {
     font-size: 100px;
   }
@@ -339,7 +335,7 @@ section.module.parallax#intro .right-col .intro_buttons a:visited, section.modul
 /* ============================================================
   Flexbox
 ============================================================ */
-/* line 159, ../sass/base/_base.scss */
+/* line 183, ../sass/base/_base.scss */
 .flex-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -351,7 +347,7 @@ section.module.parallax#intro .right-col .intro_buttons a:visited, section.modul
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 }
-/* line 162, ../sass/base/_base.scss */
+/* line 186, ../sass/base/_base.scss */
 .flex-container .flex-inner {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -370,16 +366,16 @@ section.module.parallax#intro .right-col .intro_buttons a:visited, section.modul
   -moz-justify-content: center;
   justify-content: center;
 }
-/* line 166, ../sass/base/_base.scss */
+/* line 190, ../sass/base/_base.scss */
 .flex-container .flex-inner.first {
   order: 1;
 }
-/* line 169, ../sass/base/_base.scss */
+/* line 193, ../sass/base/_base.scss */
 .flex-container .flex-inner.second {
   order: 2;
 }
 
-/* line 175, ../sass/base/_base.scss */
+/* line 199, ../sass/base/_base.scss */
 .wlogo {
   height: 20px;
   width: 20px;
