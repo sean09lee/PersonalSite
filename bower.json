@@ -1,0 +1,21 @@
+{
+  "name": "sean",
+  "version": "1.0.0",
+  "homepage": "https://github.com/sean09lee/PersonalSite.git",
+  "authors": [
+    "Sean Lee"
+  ],
+  "description": "Sean's personal site bower file",
+  "main": "main.css",
+  "keywords": [
+    "styles"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    // personalSite
+    "uid": "personalSite",
+    "append": true,
+    "watch": true,
+    "script": "/app/app.js",
+    "sourceDir": "/root"
+  }
+]
