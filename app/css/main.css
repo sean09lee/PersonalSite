@@ -120,6 +120,29 @@ main {
   margin: 0 auto;
   padding: 0 20px; }
 
+section.parallax {
+  padding: 150px 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  section.parallax .container h1 {
+    font-family: "Roboto Slab", serif;
+    color: white;
+    font-size: 100px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px #fff; }
+  section.parallax .container h2 {
+    font-family: "adobe-garamond-pro";
+    font-style: italic;
+    padding: 10px; }
+
+section.content {
+  padding: 40px 0; }
+
 /* ============================================================
   HEADER & SITE TITLE
 ============================================================ */
@@ -203,12 +226,8 @@ header .social a:hover {
 /* ============================================================
   TEXT LEVEL SEMANTICS
 ============================================================ */
-a {
-  text-decoration: none;
-  color: #1e1e1e; }
-
-a:hover {
-  color: black; }
+a, a:hover, a:visited, a:focus, a:active {
+  text-decoration: none; }
 
 /* ============================================================
   FOOTER
@@ -298,15 +317,14 @@ nav {
         padding: 10px 20px; }
         nav ul li a span {
           font-size: 25px; }
-      nav ul li a:hover {
-        background-color: #fff;
-        transition: background-color 0.3s ease-in, color 0.3s ease-in;
-        text-decoration: none; }
-      nav ul li a:visited {
-        text-decoration: none; }
-      nav ul li a:focus {
-        text-decoration: none;
-        color: lightgray; }
+        nav ul li a:visited {
+          text-decoration: none;
+          color: lightgray; }
+        nav ul li a:hover {
+          background-color: #fff;
+          transition: background-color 0.3s ease-in, color 0.3s ease-in;
+          text-decoration: none;
+          color: black; }
 
 /*---------------   
 --Mixin: overlay
@@ -314,159 +332,126 @@ nav {
 /*************************************************************
     2. Home page
 *************************************************************/
-/* ============================================================
-  SECTIONS
-============================================================ */
-section.parallax .container h1 {
-  font-family: "Roboto Slab", serif; }
-
-section.parallax .container h2 {
-  font-family: "adobe-garamond-pro";
-  font-style: italic;
-  padding: 10px; }
-
-section.module h2 {
-  margin-bottom: 40px;
-  font-size: 30px; }
-
-section.module p {
-  margin-bottom: 40px;
-  font-size: 16px;
-  font-weight: 300; }
-  section.module p:last-child {
+#home {
+  /* ============================================================
+    SECTIONS
+    ============================================================ */ }
+  #home section h2 {
+    margin-bottom: 40px;
+    font-size: 30px; }
+  #home section p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300; }
+    #home section p:last-child {
+      margin-bottom: 0; }
+  #home section:last-child {
     margin-bottom: 0; }
-
-section.module.content {
-  padding: 40px 0; }
-
-section.module:last-child {
-  margin-bottom: 0; }
-
-section.module.parallax {
-  padding: 150px 0;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; }
-  section.module.parallax h1 {
-    color: white;
-    font-size: 48px;
-    line-height: 1;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 0px 0px 10px #fff; }
-
-section.module.parallax-1 {
-  background-image: -webkit-linear-gradient(rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url(",,/img/backgrounds/desk_bg.jpg");
-  background-image: -o-linear-gradient(rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url("../img/backgrounds/desk_bg.jpg");
-  background-image: linear-gradient(rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url("../img/backgrounds/desk_bg.jpg"); }
-
-section.module.parallax-2 {
-  background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url(../img/backgrounds/chess_bg.jpg); }
-
-section.module.parallax#intro .container {
-  display: flex; }
-  section.module.parallax#intro .container .left-col {
-    justify-content: center;
-    display: flex;
-    flex-grow: 1;
-    align-self: center; }
-    section.module.parallax#intro .container .left-col .avatar {
-      border-radius: 100%;
-      border-style: dotted;
-      border-width: thin;
-      border-color: #fff; }
-    section.module.parallax#intro .container .left-col .avatar:hover {
-      box-shadow: 0 0 20px white; }
-    section.module.parallax#intro .container .left-col a, section.module.parallax#intro .container .left-col a:hover, section.module.parallax#intro .container .left-col a:focus, section.module.parallax#intro .container .left-col a:visited {
-      text-decoration: none;
-      color: transparent;
-      border: none; }
-  section.module.parallax#intro .container .right-col {
-    flex-grow: 1; }
-    section.module.parallax#intro .container .right-col h1 {
-      color: white;
-      z-index: 2; }
-    section.module.parallax#intro .container .right-col h2 {
-      color: white;
-      text-align: center;
-      font-style: italic;
-      font-size: 24px; }
-    section.module.parallax#intro .container .right-col .intro_buttons {
-      text-align: center; }
-      section.module.parallax#intro .container .right-col .intro_buttons a {
-        border: 2px solid #fff;
-        padding: 10px 20px 10px 20px;
-        text-align: center;
-        margin: 0 5px;
-        background-color: transparent;
-        color: #fff;
-        text-transform: uppercase; }
-        section.module.parallax#intro .container .right-col .intro_buttons a span {
-          display: inline-block; }
-        section.module.parallax#intro .container .right-col .intro_buttons a:hover {
-          background-color: #fff;
-          transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  #home section.parallax-1 {
+    background-image: -webkit-linear-gradient(rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url(",,/img/backgrounds/desk_bg.jpg");
+    background-image: -o-linear-gradient(rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url("../img/backgrounds/desk_bg.jpg");
+    background-image: linear-gradient(rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url("../img/backgrounds/desk_bg.jpg"); }
+    #home section.parallax-1 .container {
+      display: flex; }
+      #home section.parallax-1 .container .left-col {
+        justify-content: center;
+        display: flex;
+        flex-grow: 1;
+        align-self: center; }
+        #home section.parallax-1 .container .left-col .avatar {
+          border-radius: 100%;
+          box-shadow: 10px 10px 5px #888888; }
+        #home section.parallax-1 .container .left-col .avatar:hover {
+          box-shadow: 0 0 20px white; }
+        #home section.parallax-1 .container .left-col a, #home section.parallax-1 .container .left-col a:hover, #home section.parallax-1 .container .left-col a:focus, #home section.parallax-1 .container .left-col a:visited {
           text-decoration: none;
-          color: #181818; }
-        section.module.parallax#intro .container .right-col .intro_buttons a:visited, section.module.parallax#intro .container .right-col .intro_buttons a:focus {
-          text-decoration: none; }
-
-/* ============================================================
-  Flexbox
-============================================================ */
-.flex-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -moz-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap; }
-  .flex-container .flex-inner {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -moz-box-flex: 1;
-    -moz-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    justify-content: center; }
-    .flex-container .flex-inner.first {
-      order: 1; }
-    .flex-container .flex-inner.second {
-      order: 2; }
-
-.wlogo {
-  height: 20px;
-  width: 20px;
-  margin-right: 10px; }
+          color: transparent;
+          border: none; }
+      #home section.parallax-1 .container .right-col {
+        flex-grow: 1; }
+        #home section.parallax-1 .container .right-col h1 {
+          color: white;
+          z-index: 2; }
+        #home section.parallax-1 .container .right-col h2 {
+          color: white;
+          text-align: center;
+          font-style: italic;
+          font-size: 24px; }
+        #home section.parallax-1 .container .right-col .intro_buttons {
+          text-align: center; }
+          #home section.parallax-1 .container .right-col .intro_buttons a {
+            border: 2px solid #fff;
+            padding: 10px 20px 10px 20px;
+            text-align: center;
+            margin: 0 5px;
+            background-color: transparent;
+            color: #fff;
+            text-transform: uppercase; }
+            #home section.parallax-1 .container .right-col .intro_buttons a span {
+              display: inline-block; }
+            #home section.parallax-1 .container .right-col .intro_buttons a:hover {
+              background-color: #fff;
+              transition: background-color 0.3s ease-in, color 0.3s ease-in;
+              text-decoration: none;
+              color: #181818; }
+            #home section.parallax-1 .container .right-col .intro_buttons a:visited, #home section.parallax-1 .container .right-col .intro_buttons a:focus {
+              text-decoration: none; }
+  #home section.parallax-2 {
+    background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url(../img/backgrounds/chess_bg.jpg); }
+  #home #experience {
+    /* ============================================================
+        Flexbox
+        ============================================================ */ }
+    #home #experience .flex-container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      -moz-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
+      #home #experience .flex-container .flex-inner {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center; }
+        #home #experience .flex-container .flex-inner.first {
+          order: 1; }
+        #home #experience .flex-container .flex-inner.second {
+          order: 2; }
+    #home #experience .wlogo {
+      height: 20px;
+      width: 20px;
+      margin-right: 10px; }
 
 @media all and (min-width: 960px) {
-  section.module.parallax h1 {
+  section.parallax h1 {
     font-size: 100px; } }
 
 @media all and (min-width: 600px) {
-  section.module h1 {
+  section h1 {
     font-size: 34px; }
-  section.module h2 {
+  section h2 {
     font-size: 26px; }
-  section.module p {
+  section p {
     font-size: 16px; }
-  section.module.parallax {
+  section.parallax {
     padding: 150px 0; }
-    section.module.parallax h1 {
+    section.parallax h1 {
       font-size: 96px; } }
 
 /*************************************************************
@@ -532,8 +517,8 @@ section.module.parallax#intro .container {
 /*************************************************************
     4. General Mills page
 *************************************************************/
-#genmills.parallax-gmi {
-  background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url(../../img/backgrounds/genmills_bg.jpg); }
+#genmills .parallax-gmi {
+  background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%), url(../img/backgrounds/genmills_bg.jpg); }
 
 /*************************************************************
     5. Sparkstarter page
